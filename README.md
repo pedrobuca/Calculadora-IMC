@@ -5,3 +5,9 @@
 
 
 Link para o site : https://calculadora-imc-rho-olive.vercel.app/
+
+
+Tecnologias Utilizadas :
+ - HTML
+ - Css
+ - JavaScript
