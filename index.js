@@ -10,46 +10,37 @@ btn.addEventListener('click',()=>{
    
    resultado = (peso.value)/(altura.value*altura.value)
 
-    alert(resultado)
 
-    switch (resultado) {
+    if(resultado<19){
+        Resultado_IMC.innerText = "Peso Insuficiente";
+        IMCR.innerText = resultado;
+    }
 
-        case (resultado>=19):
-                Resultado_IMC.innerText = "Peso Normal";
-                IMCR.innerText = resultado;
-               
-            break;
-
-            case (resultado>=25):
-                
-                    Resultado_IMC.innerText = "Sobrepeso";
-                    IMCR.innerText = resultado;
-                   
-                break;
-
-                case (resultado>=30 ):
-                    
-                        Resultado_IMC.innerText = "Obesidade grau 1";
-                        IMCR.innerText = resultado;
-                       
-                    break;
-
-                    case (resultado>=35):
-                        
-                            Resultado_IMC.innerText = "Obesidade grau 2";
-                            IMCR.innerText = resultado;
-                           
-                        break;
-                        case (resultado>=40):
-                            
-                                Resultado_IMC.innerText = "Obesidade grau 3";
-                                IMCR.innerText = resultado;
-                               
-                            break;
-    
-        default:
-           
-            break;
+    if(resultado>=18.5 && resultado<=24.9){
+        Resultado_IMC.innerText = "Peso Normal";
+        IMCR.innerText = resultado;
+    }
+    else if(resultado>=25 && resultado<=29.9){
+        Resultado_IMC.innerText = "Sobrepeso";
+        IMCR.innerText = resultado;
+    }
+    else if(resultado>=30 && resultado<=34.9){
+        Resultado_IMC.innerText = "Obesidade grau 1";
+        IMCR.innerText = resultado;
     }
     
+    else if(resultado>=35 && resultado<=39.9){
+        Resultado_IMC.innerText = "Obesidade grau 2";
+        IMCR.innerText = resultado;
+    }
+    else if(resultado>=40){
+        Resultado_IMC.innerText = "Obesidade grau 3";
+        IMCR.innerText = resultado;
+    }
+
+    peso.value = "";
+    altura.value = "";
 })
+
+
+
