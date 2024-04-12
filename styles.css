@@ -27,6 +27,7 @@ body{
 .titulo{
     color: #E85B81;
     font-size: 2em;
+    padding-top: 1em;
 }
 
 .main{
@@ -60,4 +61,14 @@ body{
     color: #fff;
     background-color: #E85B81;
     font-size: 1em;
+}
+
+.div_result{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #E85B81;
+    margin-top: 2em;
+    padding-bottom: 2em;
+    width: 60%;
+
 }
